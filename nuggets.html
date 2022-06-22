@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Author" content="Oliver, Senna, Damian, Stefano">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestel-Pagina</title>
+    <link rel="stylesheet" href="./style/nuggets.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+    <script src="nuggets.js"></script>
+</head>
+
+<header>
+    <div class="header">
+        <img src="./images/maccie.png" alt="logo">
+      </div>
+
+    <!--Navbar-->
+
+      <div id="navbar">
+        <a class="active" href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)">Contact</a>
+      </div>
+
+<body>
+    <div class="CartContainer">
+        <div class="Header">
+            <h3 class="Heading">Afrekenen</h3>
+        </div>
+
+        <form>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Omschrijving</th>
+                    <th>&nbsp;</th>
+                    <th>Aantal</th>
+                    <th>Totaal</th>
+                </tr>
+                <tr>
+                    
+                    <td><img src="./images/nuggets.jpg"></td>
+                    <td class="omschrijving"><h2>Nuggets</h2><h3>&euro; 3.50</h3><br>6 krokante kipnuggets heerlijk als snack.</td>
+                    <td><input type="button" onclick="koopProduct('appel',1)" value="+"><input type="button" onclick="verwijderProduct('appel',1)" value="-"></td>
+                    <td><input type="text" id="totaal_appel"></td>
+                    <td><input type="text" id="totaalPrijs_appel"></td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="4"><input type="button" onclick="berekenPrijs()" value="Bereken totaalprijs" class="totaalbutton"></td>
+                    <td><input type="text" id="totaalPrijs"></td>
+                </tr>
+ </div>
+</body>
+</html>

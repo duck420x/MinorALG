@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+html {
+  text-align: center;
+  justify-content: center;
+}
+.parent {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  margin: 0% 30% 0% 30%;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  margin: 0% 30% 0% 30%;
+}
+.div3 {
+  grid-area: 2 / 1 / 3 / 2;
+  margin: 5% 30% 0% 30%
+}
+.div4 {
+  grid-area: 2 / 2 / 3 / 3;
+  margin: 5% 30% 0% 30%
+}
+.div5 {
+  grid-area: 3 / 1 / 4 / 2;
+  margin: 5% 30% 0% 30%
+}
+.div6 {
+  grid-area: 3 / 2 / 4 / 3;
+  margin: 5% 30% 0% 30%
+}
+.div7 {
+  grid-area: 4 / 1 / 5 / 2;
+  margin: 5% 30% 0% 30%
+}
+.div8 {
+  grid-area: 4 / 2 / 5 / 3;
+  margin: 5% 30% 0% 30%
+}
+.div9 {
+  grid-area: 5 / 1 / 6 / 2;
+  margin: 5% 30% 10% 30%
+}
+.div10 {
+  grid-area: 5 / 2 / 6 / 3;
+  margin: 5% 30% 10% 30%
+}
+
+.foto {
+  width: 300px;
+}
+@import "https://fonts.googleapis.com/css?family=Lily+Script+One";
+body {
+  background: #eee;
+  font-family: "Lily Script One";
+}
+
+.card {
+  margin: 15%;
+  top: 50%;
+  /* grootte van de cards */
+  width: 200px;
+  height: 200px;
+
+  text-align: center;
+  perspective: 500px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  font-family: 'Oswald', sans-serif;
+  color: grey;
+  text-align: center;
+
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+    font-family: 'Oswald', sans-serif;
+  background: #333;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* header */
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #216c28;
+  padding: 30px;
+  text-align: center;
+}
+.header img {
+  width: 20%;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  z-index: 2;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #216c28;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color 0.15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+.flex-equal > {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+#BUUTON{
+   background-color: #ddd;
+    transition-duration: 0.5s;
+    font-family: 'Oswald', sans-serif;
+}
+#BUUTON:hover{
+    padding: 5%;
+    background-color: #216c28;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+    font-weight: 1000;
+}

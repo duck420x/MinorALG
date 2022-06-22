@@ -21,7 +21,7 @@
     .iv9 { grid-area: 3 / 3 / 4 / 4; }
     .iv10 { grid-area: 4 / 1 / 5 / 2; }
     .iv11 { grid-area: 4 / 2 / 5 / 3; }
-   
+    .iv12 { grid-area: 4 / 3 / 5 / 4; }
     .sub{
         background-color: lightgrey;
         padding: 4%;
@@ -41,9 +41,14 @@
     }
     .kas:hover{
       border-radius: 20px;
-      background-color: grey;
+      background-color: #216c29af;
     }
-
+    #uitvoer{
+      width: 300px;
+      text-align: center;
+      margin: 1% 39vh 2% 39vw;
+      height: 50px;
+    }
 
     /* navbar */
     body {
@@ -82,7 +87,7 @@
       }
     
       #navbar a.active {
-        background-color: #04AA6D;
+        background-color: #216c28;
         color: white;
       }
     
@@ -103,7 +108,7 @@
       .container {
         max-width: 960px;
       }
-    
+
     
     
       .site-header {

@@ -1,5 +1,7 @@
 "use strict()";
 
+let totaal = getCookie("totaal");
+
 let clicked = 0;
 
 let pin1 = document.getElementById("pin1");
@@ -29,6 +31,9 @@ pin9.addEventListener("click", pinClick);
 pin10.addEventListener("click", pinClick);
 submit.addEventListener("click", submitClick);
 
+document.getElementById("uitvoer").value = totaal;
+totaal = null;
+
 function pinClick() {
 	if (clicked < 4) {
 		clicked++;
@@ -56,5 +61,19 @@ function pinCheck() {
 		probField.style.color = "red";
 		probField.style.fontWeight = "bold";
 	}
+}
+function getCookie(cname) {
+	let name = cname + "=";
+	let ca = document.cookie.split(";");
+	for (const element of ca) {
+		let c = element;
+		while (c.charAt(0) == " ") {
+			c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+			return c.substring(name.length, c.length);
+		}
+	}
+	return "";
 }
 setInterval(pinCheck, 1500);

@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoer</title>
-    <link rel="stylesheet" href="./einde.css">
+	<head>
+		<meta charset="UTF-8" />
+		<script src="./scripts/einde.js" defer></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Invoer</title>
+		<link rel="stylesheet" href="./einde.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<img src="./images/maccie" alt="logo" />
+			</div>
 
-</head>
-<body>
-    <header>
-        <div class="header">
-            <img src="./images/maccie" alt="logo">
-          </div>
-    
-        <!--Navbar-->
-    
-          <div id="navbar">
-            <a class="active" href="javascript:void(0)">Home</a>
-            <a href="javascript:void(0)">News</a>
-            <a href="javascript:void(0)">Contact</a>
-          </div>
-    
+			<!--Navbar-->
 
-        <script>
-            window.onscroll = function() {myFunction()};
-    
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-    
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-            </script>
-</header>
-    <input type="number" name="output" id="uitvoer" disabled>
-    <div class="parent">
-        <div id="num1" class="iv1"><h1  class="kas">1</h1></div>
-        <div id="num2" class="iv2"><h1  class="kas">2</h1> </div>
-        <div id="num3" class="iv3"><h1  class="kas">3</h1> </div>
-        <div id="num4" class="iv4"><h1  class="kas">4</h1> </div>
-        <div id="num5" class="iv5"><h1  class="kas">5</h1> </div>
-        <div id="num6" class="iv6"><h1  class="kas">6</h1> </div>
-        <div id="num7" class="iv7"><h1  class="kas">7</h1> </div>
-        <div id="num8" class="iv8"><h1  class="kas">8</h1> </div>
-        <div id="num9" class="iv9"><h1  class="kas">9</h1> </div>
-        <div id="num10" class="iv10"><h1  class="kas">0</h1> </div>
-        <div id="submit" class="siv11"><h1 class="sub">Submit</h1></div>
-        </div>
-</body>
+			<div id="navbar">
+				<a class="active" href="javascript:void(0)">Home</a>
+				<a href="javascript:void(0)">News</a>
+				<a href="javascript:void(0)">Contact</a>
+			</div>
 
+			<script>
+				window.onscroll = function () {
+					myFunction();
+				};
+
+				var navbar = document.getElementById("navbar");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+					if (window.pageYOffset >= sticky) {
+						navbar.classList.add("sticky");
+					} else {
+						navbar.classList.remove("sticky");
+					}
+				}
+			</script>
+		</header>
+		<input type="number" name="output" id="uitvoer" disabled />
+		<div class="parent">
+			<div id="pin" class="iv1"><h1 class="kas">1</h1></div>
+			<div id="pin" class="iv2"><h1 class="kas">2</h1></div>
+			<div id="pin" class="iv3"><h1 class="kas">3</h1></div>
+			<div id="pin" class="iv4"><h1 class="kas">4</h1></div>
+			<div id="pin" class="iv5"><h1 class="kas">5</h1></div>
+			<div id="pin" class="iv6"><h1 class="kas">6</h1></div>
+			<div id="pin" class="iv7"><h1 class="kas">7</h1></div>
+			<div id="pin" class="iv8"><h1 class="kas">8</h1></div>
+			<div id="pin" class="iv9"><h1 class="kas">9</h1></div>
+			<div id="pin" class="iv10"><h1 class="kas">0</h1></div>
+			<div id="submit" class="siv11"><h1 class="sub">Submit</h1></div>
+		</div>
+	</body>
+</html>

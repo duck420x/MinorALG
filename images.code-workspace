@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "images",
+			"path": "..\\..\\..\\..\\digitalsig\\images"
+		},
+		{
+			"name": "MinorALG",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MinorALG"
+	}
+}

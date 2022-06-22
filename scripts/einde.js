@@ -12,7 +12,10 @@ let pin7 = document.getElementById("pin7");
 let pin8 = document.getElementById("pin8");
 let pin9 = document.getElementById("pin9");
 let pin10 = document.getElementById("pin10");
+
 let submit = document.getElementById("submit");
+let probField = document.getElementById("utt");
+probField.value = "Er zijn geen problemen!";
 
 pin1.addEventListener("click", pinClick);
 pin2.addEventListener("click", pinClick);
@@ -34,8 +37,24 @@ function pinClick() {
 }
 function submitClick() {
 	if (clicked == 4) {
-        window.location.replace("./index.html");
+		window.location.replace("./index.html");
 	} else {
+		probField.value = "Er zijn problemen!";
+		probField.style.color = "red";
+		probField.style.fontWeight = "bold";
 		console.error("not enough clicks");
 	}
 }
+
+function pinCheck() {
+	if (clicked == 4) {
+		probField.value = "Er zijn geen problemen!";
+		probField.style.color = "green";
+		probField.style.fontWeight = "bold";
+	} else if (clicked < 4) {
+		probField.value = "Vul een pin in!";
+		probField.style.color = "red";
+		probField.style.fontWeight = "bold";
+	}
+}
+setInterval(pinCheck, 1500);
